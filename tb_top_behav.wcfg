@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="43282328000fs"></ZoomStartTime>
-      <ZoomEndTime time="43288013001fs"></ZoomEndTime>
-      <Cursor1Time time="43285828000fs"></Cursor1Time>
+      <ZoomStartTime time="24695286448fs"></ZoomStartTime>
+      <ZoomEndTime time="24729336449fs"></ZoomEndTime>
+      <Cursor1Time time="24707636448fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="175"></NameColumnWidth>
-      <ValueColumnWidth column_width="144"></ValueColumnWidth>
+      <ValueColumnWidth column_width="138"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="16" />
+   <WVObjectSize size="14" />
    <wvobject fp_name="/tb_top/rst" type="logic">
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
@@ -50,40 +50,32 @@
       <obj_property name="ObjectShortName">tab6[5:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_top/uut/uut_display/A" type="array">
-      <obj_property name="ElementShortName">A[3:0]</obj_property>
-      <obj_property name="ObjectShortName">A[3:0]</obj_property>
+   <wvobject fp_name="/tb_top/uut/uut_key/clk_1hz" type="logic">
+      <obj_property name="ElementShortName">clk_1hz</obj_property>
+      <obj_property name="ObjectShortName">clk_1hz</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_top/uut/clk" type="logic">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_top/uut/rst" type="logic">
+   <wvobject fp_name="/tb_top/uut/uut_key/rst" type="logic">
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_top/uut/sec_low" type="array">
-      <obj_property name="ElementShortName">sec_low[3:0]</obj_property>
-      <obj_property name="ObjectShortName">sec_low[3:0]</obj_property>
+   <wvobject fp_name="/tb_top/uut/uut_key/key" type="array">
+      <obj_property name="ElementShortName">key[3:0]</obj_property>
+      <obj_property name="ObjectShortName">key[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_top/uut/sec_high" type="array">
-      <obj_property name="ElementShortName">sec_high[2:0]</obj_property>
-      <obj_property name="ObjectShortName">sec_high[2:0]</obj_property>
+   <wvobject fp_name="/tb_top/uut/uut_key/adjust_enable" type="logic">
+      <obj_property name="ElementShortName">adjust_enable</obj_property>
+      <obj_property name="ObjectShortName">adjust_enable</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_top/uut/min_low" type="array">
-      <obj_property name="ElementShortName">min_low[3:0]</obj_property>
-      <obj_property name="ObjectShortName">min_low[3:0]</obj_property>
+   <wvobject fp_name="/tb_top/uut/uut_key/select_pos" type="array">
+      <obj_property name="ElementShortName">select_pos[2:0]</obj_property>
+      <obj_property name="ObjectShortName">select_pos[2:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_top/uut/min_high" type="array">
-      <obj_property name="ElementShortName">min_high[2:0]</obj_property>
-      <obj_property name="ObjectShortName">min_high[2:0]</obj_property>
+   <wvobject fp_name="/tb_top/uut/uut_key/adjust_up" type="logic">
+      <obj_property name="ElementShortName">adjust_up</obj_property>
+      <obj_property name="ObjectShortName">adjust_up</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_top/uut/hour_low" type="array">
-      <obj_property name="ElementShortName">hour_low[1:0]</obj_property>
-      <obj_property name="ObjectShortName">hour_low[1:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_top/uut/hour_high" type="array">
-      <obj_property name="ElementShortName">hour_high[1:0]</obj_property>
-      <obj_property name="ObjectShortName">hour_high[1:0]</obj_property>
+   <wvobject fp_name="/tb_top/uut/uut_key/adjust_down" type="logic">
+      <obj_property name="ElementShortName">adjust_down</obj_property>
+      <obj_property name="ObjectShortName">adjust_down</obj_property>
    </wvobject>
 </wave_config>

@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Dec 17 16:04:50 2024
+# Process ID: 19148
+# Current directory: D:/software/Xilinx/program/FPGA_EX15_2024304066/watch
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10376 D:\software\Xilinx\program\FPGA_EX15_2024304066\watch\watch.xpr
+# Log file: D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/vivado.log
+# Journal file: D:/software/Xilinx/program/FPGA_EX15_2024304066/watch\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/tb_top_behav.wcfg
+source fsm.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_fsm [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim

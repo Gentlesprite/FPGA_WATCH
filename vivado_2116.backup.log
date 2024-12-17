@@ -1,0 +1,2178 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Dec 17 14:25:18 2024
+# Process ID: 2116
+# Current directory: D:/software/Xilinx/program/FPGA_EX15_2024304066/watch
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12916 D:\software\Xilinx\program\FPGA_EX15_2024304066\watch\watch.xpr
+# Log file: D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/vivado.log
+# Journal file: D:/software/Xilinx/program/FPGA_EX15_2024304066/watch\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.xpr
+INFO: [Project 1-313] Project file moved from 'G:/FPGA_keshe/FPGA/watch' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/software/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:12 . Memory (MB): peak = 932.520 ; gain = 225.000
+update_compile_order -fileset sources_1
+close [ open D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/key.v w ]
+add_files D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/key.v
+update_compile_order -fileset sources_1
+close [ open D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/time_adjust.v w ]
+add_files D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/time_adjust.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/time_adjust.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module time_adjust
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sim_1/new/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+"xelab -wto ad574e61f10b4fad96704020729968e1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto ad574e61f10b4fad96704020729968e1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/top.v" Line 1. Module top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/fsm.v" Line 1. Module fsm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/key.v" Line 1. Module key doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/time_adjust.v" Line 1. Module time_adjust doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/display.v" Line 1. Module display doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fsm
+Compiling module xil_defaultlib.key
+Compiling module xil_defaultlib.time_adjust
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.display
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim/xsim.dir/tb_top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Dec 17 15:11:53 2024...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 961.512 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -view {D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/tb_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/tb_top_behav.wcfg
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Time:  0:  0:  0. 0, Seg8: 11111111, Tab6: 111110
+Testing normal counting...
+xsim: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 1019.367 ; gain = 48.137
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1019.367 ; gain = 57.855
+current_wave_config {tb_top_behav.wcfg}
+tb_top_behav.wcfg
+add_wave {{/tb_top/uut/uut_key}} 
+run all
+Entering adjustment mode...
+Selecting seconds low for adjustment...
+Adjusting seconds low up...
+Adjusting seconds low down...
+Selecting seconds high for adjustment...
+Adjusting seconds high up...
+Adjusting seconds high down...
+Selecting minutes low for adjustment...
+Adjusting minutes low up...
+Adjusting minutes low down...
+Selecting minutes high for adjustment...
+Adjusting minutes high up...
+Adjusting minutes high down...
+Selecting hours low for adjustment...
+Adjusting hours low up...
+Adjusting hours low down...
+Selecting hours high for adjustment...
+Adjusting hours high up...
+Adjusting hours high down...
+Exiting adjustment mode...
+Resuming normal counting...
+$finish called at time : 20420 ns : File "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sim_1/new/tb_top.v" Line 189
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1040.543 ; gain = 11.113
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/time_adjust.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module time_adjust
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sim_1/new/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+"xelab -wto ad574e61f10b4fad96704020729968e1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto ad574e61f10b4fad96704020729968e1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/top.v" Line 1. Module top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/fsm.v" Line 1. Module fsm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/key.v" Line 1. Module key doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/time_adjust.v" Line 1. Module time_adjust doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/display.v" Line 1. Module display doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fsm
+Compiling module xil_defaultlib.key
+Compiling module xil_defaultlib.time_adjust
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.display
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -view {D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/tb_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/tb_top_behav.wcfg
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Time:  0:  0:  0. 0, Seg8: 11111111, Tab6: 111110
+Testing normal counting...
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1040.543 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1040.543 ; gain = 0.000
+current_wave_config {tb_top_behav.wcfg}
+tb_top_behav.wcfg
+add_wave {{/tb_top/uut/uut_key}} 
+run all
+Entering adjustment mode...
+Selecting seconds low for adjustment...
+Adjusting seconds low up...
+Adjusting seconds low down...
+Selecting seconds high for adjustment...
+Adjusting seconds high up...
+Adjusting seconds high down...
+Selecting minutes low for adjustment...
+Adjusting minutes low up...
+Adjusting minutes low down...
+Selecting minutes high for adjustment...
+Adjusting minutes high up...
+Adjusting minutes high down...
+Selecting hours low for adjustment...
+Adjusting hours low up...
+Adjusting hours low down...
+Selecting hours high for adjustment...
+Adjusting hours high up...
+Adjusting hours high down...
+Exiting adjustment mode...
+Resuming normal counting...
+run: Time (s): cpu = 00:01:33 ; elapsed = 00:01:02 . Memory (MB): peak = 1309.242 ; gain = 238.930
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/time_adjust.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module time_adjust
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sim_1/new/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+"xelab -wto ad574e61f10b4fad96704020729968e1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto ad574e61f10b4fad96704020729968e1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/top.v" Line 1. Module top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/fsm.v" Line 1. Module fsm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/key.v" Line 1. Module key doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/time_adjust.v" Line 1. Module time_adjust doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/display.v" Line 1. Module display doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fsm
+Compiling module xil_defaultlib.key
+Compiling module xil_defaultlib.time_adjust
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.display
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -view {D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/tb_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/tb_top_behav.wcfg
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Time:  0:  0:  0. 0, Seg8: 11111111, Tab6: 111110
+Testing normal counting...
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1309.242 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1309.242 ; gain = 0.000
+run all
+Entering adjustment mode...
+Selecting seconds low for adjustment...
+Adjusting seconds low up...
+Adjusting seconds low down...
+Selecting seconds high for adjustment...
+Adjusting seconds high up...
+Adjusting seconds high down...
+Selecting minutes low for adjustment...
+Adjusting minutes low up...
+Adjusting minutes low down...
+Selecting minutes high for adjustment...
+Adjusting minutes high up...
+Adjusting minutes high down...
+Selecting hours low for adjustment...
+Adjusting hours low up...
+Adjusting hours low down...
+Selecting hours high for adjustment...
+Adjusting hours high up...
+Adjusting hours high down...
+Exiting adjustment mode...
+Resuming normal counting...
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1309.242 ; gain = 0.000
+current_wave_config {tb_top_behav.wcfg}
+tb_top_behav.wcfg
+add_wave {{/tb_top/uut/uut_key}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+"xelab -wto ad574e61f10b4fad96704020729968e1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto ad574e61f10b4fad96704020729968e1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Time:  0:  0:  0. 0, Seg8: 11111111, Tab6: 111110
+Testing normal counting...
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1309.242 ; gain = 0.000
+run all
+Entering adjustment mode...
+Selecting seconds low for adjustment...
+Adjusting seconds low up...
+Adjusting seconds low down...
+Selecting seconds high for adjustment...
+Adjusting seconds high up...
+Adjusting seconds high down...
+Selecting minutes low for adjustment...
+Adjusting minutes low up...
+Adjusting minutes low down...
+Selecting minutes high for adjustment...
+Adjusting minutes high up...
+Adjusting minutes high down...
+Selecting hours low for adjustment...
+Adjusting hours low up...
+Adjusting hours low down...
+Selecting hours high for adjustment...
+Adjusting hours high up...
+Adjusting hours high down...
+Exiting adjustment mode...
+Resuming normal counting...
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1309.242 ; gain = 0.000
+current_wave_config {tb_top_behav.wcfg}
+tb_top_behav.wcfg
+add_wave {{/tb_top/uut/uut_counter}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+"xelab -wto ad574e61f10b4fad96704020729968e1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto ad574e61f10b4fad96704020729968e1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Time:  0:  0:  0. 0, Seg8: 11111111, Tab6: 111110
+Testing normal counting...
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1309.242 ; gain = 0.000
+run all
+Entering adjustment mode...
+Selecting seconds low for adjustment...
+Adjusting seconds low up...
+Adjusting seconds low down...
+Selecting seconds high for adjustment...
+Adjusting seconds high up...
+Adjusting seconds high down...
+Selecting minutes low for adjustment...
+Adjusting minutes low up...
+Adjusting minutes low down...
+Selecting minutes high for adjustment...
+Adjusting minutes high up...
+Adjusting minutes high down...
+Selecting hours low for adjustment...
+Adjusting hours low up...
+Adjusting hours low down...
+Selecting hours high for adjustment...
+Adjusting hours high up...
+Adjusting hours high down...
+Exiting adjustment mode...
+Resuming normal counting...
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+run: Time (s): cpu = 00:00:57 ; elapsed = 00:00:38 . Memory (MB): peak = 1309.242 ; gain = 0.000
+current_wave_config {tb_top_behav.wcfg}
+tb_top_behav.wcfg
+add_wave {{/tb_top/uut/uut_time_adjust}} 
+run all
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+run: Time (s): cpu = 00:00:35 ; elapsed = 00:00:22 . Memory (MB): peak = 1309.242 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/time_adjust.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module time_adjust
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sim_1/new/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+"xelab -wto ad574e61f10b4fad96704020729968e1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto ad574e61f10b4fad96704020729968e1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/top.v" Line 1. Module top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/fsm.v" Line 1. Module fsm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/key.v" Line 1. Module key doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/time_adjust.v" Line 1. Module time_adjust doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/display.v" Line 1. Module display doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fsm
+Compiling module xil_defaultlib.key
+Compiling module xil_defaultlib.time_adjust
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.display
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -view {D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/tb_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/tb_top_behav.wcfg
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Time:  0:  0:  0. 0, Seg8: 11111111, Tab6: 111110
+Testing normal counting...
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1309.242 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1309.242 ; gain = 0.000
+run all
+Entering adjustment mode...
+Selecting seconds low for adjustment...
+Adjusting seconds low up...
+Adjusting seconds low down...
+Selecting seconds high for adjustment...
+Adjusting seconds high up...
+Adjusting seconds high down...
+Selecting minutes low for adjustment...
+Adjusting minutes low up...
+Adjusting minutes low down...
+Selecting minutes high for adjustment...
+Adjusting minutes high up...
+Adjusting minutes high down...
+Selecting hours low for adjustment...
+Adjusting hours low up...
+Adjusting hours low down...
+Selecting hours high for adjustment...
+Adjusting hours high up...
+Adjusting hours high down...
+Exiting adjustment mode...
+Resuming normal counting...
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+run: Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1309.242 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/time_adjust.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module time_adjust
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sim_1/new/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+"xelab -wto ad574e61f10b4fad96704020729968e1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto ad574e61f10b4fad96704020729968e1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'clk' on this module [D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/top.v:55]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1309.242 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/time_adjust.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module time_adjust
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sim_1/new/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+"xelab -wto ad574e61f10b4fad96704020729968e1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto ad574e61f10b4fad96704020729968e1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/top.v" Line 1. Module top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/fsm.v" Line 1. Module fsm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/key.v" Line 1. Module key doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/time_adjust.v" Line 1. Module time_adjust doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/display.v" Line 1. Module display doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fsm
+Compiling module xil_defaultlib.key
+Compiling module xil_defaultlib.time_adjust
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.display
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -view {D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/tb_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/tb_top_behav.wcfg
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Time:  0:  0:  0. 0, Seg8: 11111111, Tab6: 111110
+Testing normal counting...
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1309.242 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1309.242 ; gain = 0.000
+run all
+Entering adjustment mode...
+Selecting seconds low for adjustment...
+Adjusting seconds low up...
+Adjusting seconds low down...
+Selecting seconds high for adjustment...
+Adjusting seconds high up...
+Adjusting seconds high down...
+Selecting minutes low for adjustment...
+Adjusting minutes low up...
+Adjusting minutes low down...
+Selecting minutes high for adjustment...
+Adjusting minutes high up...
+Adjusting minutes high down...
+Selecting hours low for adjustment...
+Adjusting hours low up...
+Adjusting hours low down...
+Selecting hours high for adjustment...
+Adjusting hours high up...
+Adjusting hours high down...
+Exiting adjustment mode...
+Resuming normal counting...
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+run: Time (s): cpu = 00:00:35 ; elapsed = 00:00:24 . Memory (MB): peak = 1309.242 ; gain = 0.000
+current_wave_config {tb_top_behav.wcfg}
+tb_top_behav.wcfg
+add_wave {{/tb_top/uut/uut_time_adjust}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/time_adjust.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module time_adjust
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sim_1/new/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+"xelab -wto ad574e61f10b4fad96704020729968e1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto ad574e61f10b4fad96704020729968e1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/top.v" Line 1. Module top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/fsm.v" Line 1. Module fsm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/key.v" Line 1. Module key doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/time_adjust.v" Line 1. Module time_adjust doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/display.v" Line 1. Module display doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fsm
+Compiling module xil_defaultlib.key
+Compiling module xil_defaultlib.time_adjust
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.display
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Time:  0:  0:  0. 0, Seg8: 11111111, Tab6: 111110
+Testing normal counting...
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1309.242 ; gain = 0.000
+run all
+Entering adjustment mode...
+Selecting seconds low for adjustment...
+Adjusting seconds low up...
+Adjusting seconds low down...
+Selecting seconds high for adjustment...
+Adjusting seconds high up...
+Adjusting seconds high down...
+Selecting minutes low for adjustment...
+Adjusting minutes low up...
+Adjusting minutes low down...
+Selecting minutes high for adjustment...
+Adjusting minutes high up...
+Adjusting minutes high down...
+Selecting hours low for adjustment...
+Adjusting hours low up...
+Adjusting hours low down...
+Selecting hours high for adjustment...
+Adjusting hours high up...
+Adjusting hours high down...
+Exiting adjustment mode...
+Resuming normal counting...
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:18 . Memory (MB): peak = 1309.242 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/time_adjust.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module time_adjust
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sim_1/new/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+"xelab -wto ad574e61f10b4fad96704020729968e1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto ad574e61f10b4fad96704020729968e1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/top.v" Line 1. Module top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/fsm.v" Line 1. Module fsm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/key.v" Line 1. Module key doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/time_adjust.v" Line 1. Module time_adjust doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/display.v" Line 1. Module display doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fsm
+Compiling module xil_defaultlib.key
+Compiling module xil_defaultlib.time_adjust
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.display
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -view {D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/tb_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/tb_top_behav.wcfg
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Time:  0:  0:  0. 0, Seg8: 11111111, Tab6: 111110
+Testing normal counting...
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1309.242 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1309.242 ; gain = 0.000
+run all
+Entering adjustment mode...
+Selecting seconds low for adjustment...
+Adjusting seconds low up...
+Adjusting seconds low down...
+Selecting seconds high for adjustment...
+Adjusting seconds high up...
+Adjusting seconds high down...
+Selecting minutes low for adjustment...
+Adjusting minutes low up...
+Adjusting minutes low down...
+Selecting minutes high for adjustment...
+Adjusting minutes high up...
+Adjusting minutes high down...
+Selecting hours low for adjustment...
+Adjusting hours low up...
+Adjusting hours low down...
+Selecting hours high for adjustment...
+Adjusting hours high up...
+Adjusting hours high down...
+Exiting adjustment mode...
+Resuming normal counting...
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:15 . Memory (MB): peak = 1309.242 ; gain = 0.000
+current_wave_config {tb_top_behav.wcfg}
+tb_top_behav.wcfg
+add_wave {{/tb_top/uut/uut_time_adjust}} 
+run all
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1309.242 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/time_adjust.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module time_adjust
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sim_1/new/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+"xelab -wto ad574e61f10b4fad96704020729968e1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto ad574e61f10b4fad96704020729968e1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/top.v" Line 1. Module top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/fsm.v" Line 1. Module fsm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/key.v" Line 1. Module key doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/time_adjust.v" Line 1. Module time_adjust doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/display.v" Line 1. Module display doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fsm
+Compiling module xil_defaultlib.key
+Compiling module xil_defaultlib.time_adjust
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.display
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -view {D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/tb_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+open_wave_config D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/tb_top_behav.wcfg
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Time:  0:  0:  0. 0, Seg8: 11111111, Tab6: 111110
+Testing normal counting...
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1498.547 ; gain = 0.000
+run all
+Entering adjustment mode...
+Selecting seconds low for adjustment...
+Adjusting seconds low up...
+Adjusting seconds low down...
+Selecting seconds high for adjustment...
+Adjusting seconds high up...
+Adjusting seconds high down...
+Selecting minutes low for adjustment...
+Adjusting minutes low up...
+Adjusting minutes low down...
+Selecting minutes high for adjustment...
+Adjusting minutes high up...
+Adjusting minutes high down...
+Selecting hours low for adjustment...
+Adjusting hours low up...
+Adjusting hours low down...
+Selecting hours high for adjustment...
+Adjusting hours high up...
+Adjusting hours high down...
+Exiting adjustment mode...
+Resuming normal counting...
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1498.547 ; gain = 0.000
+current_wave_config {tb_top_behav.wcfg}
+tb_top_behav.wcfg
+add_wave {{/tb_top/uut/uut_time_adjust}} 
+run all
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1498.547 ; gain = 0.000
+current_wave_config {tb_top_behav.wcfg}
+tb_top_behav.wcfg
+add_wave {{/tb_top/uut/uut_key}} 
+add_wave: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1498.547 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/time_adjust.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module time_adjust
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sim_1/new/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+"xelab -wto ad574e61f10b4fad96704020729968e1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto ad574e61f10b4fad96704020729968e1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/top.v" Line 1. Module top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/fsm.v" Line 1. Module fsm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/key.v" Line 1. Module key doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/time_adjust.v" Line 1. Module time_adjust doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/counter.v" Line 1. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/display.v" Line 1. Module display doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fsm
+Compiling module xil_defaultlib.key
+Compiling module xil_defaultlib.time_adjust
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.display
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Time:  0:  0:  0. 0, Seg8: 11111111, Tab6: 111110
+Testing normal counting...
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1498.547 ; gain = 0.000
+run all
+Entering adjustment mode...
+Selecting seconds low for adjustment...
+Adjusting seconds low up...
+Adjusting seconds low down...
+Selecting seconds high for adjustment...
+Adjusting seconds high up...
+Adjusting seconds high down...
+Selecting minutes low for adjustment...
+Adjusting minutes low up...
+Adjusting minutes low down...
+Selecting minutes high for adjustment...
+Adjusting minutes high up...
+Adjusting minutes high down...
+Selecting hours low for adjustment...
+Adjusting hours low up...
+Adjusting hours low down...
+Selecting hours high for adjustment...
+Adjusting hours high up...
+Adjusting hours high down...
+Exiting adjustment mode...
+Resuming normal counting...
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111101
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111011
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 110111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 101111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 011111
+Time:  0:  0:  0. 0, Seg8: 11000000, Tab6: 111110
+run: Time (s): cpu = 00:00:45 ; elapsed = 00:00:37 . Memory (MB): peak = 1498.547 ; gain = 0.000
+set_property top tb_fsm [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim/simulate.log"
+save_wave_config {D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/tb_top_behav.wcfg}
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim/simulate.log"
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_fsm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_fsm_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sim_1/new/tb_fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fsm
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim'
+"xelab -wto ad574e61f10b4fad96704020729968e1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_fsm_behav xil_defaultlib.tb_fsm xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto ad574e61f10b4fad96704020729968e1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_fsm_behav xil_defaultlib.tb_fsm xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/fsm.v" Line 1. Module fsm doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fsm
+Compiling module xil_defaultlib.tb_fsm
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fsm_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim/xsim.dir/tb_fsm_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Dec 17 15:50:43 2024...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1498.547 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1498.547 ; gain = 0.000
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Time:  0:  0:  0. 0, Seg8: 11111111, Tab6: 111110
+Testing normal counting...
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 1498.547 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim/simulate.log"
+The simulator has terminated in an unexpected manner with exit code 1.  Please review the simulation log (xsim.log) for details.
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 17 15:53:14 2024...

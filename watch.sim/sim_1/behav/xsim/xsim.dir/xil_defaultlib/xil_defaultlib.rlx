@@ -2,9 +2,12 @@
 2019.2
 Nov  6 2019
 21:57:16
-J:/FPGA课程设计/FPGA电子时钟/watch/watch.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
-J:/FPGA课程设计/FPGA电子时钟/watch/watch.srcs/sim_1/new/tb_top.v,1733901870,verilog,,,,tb_top,,,,,,,,
-J:/FPGA课程设计/FPGA电子时钟/watch/watch.srcs/sources_1/new/counter.v,1733903814,verilog,,J:/FPGA课程设计/FPGA电子时钟/watch/watch.srcs/sources_1/new/display.v,,counter,,,,,,,,
-J:/FPGA课程设计/FPGA电子时钟/watch/watch.srcs/sources_1/new/display.v,1733903070,verilog,,J:/FPGA课程设计/FPGA电子时钟/watch/watch.srcs/sources_1/new/fsm.v,,display,,,,,,,,
-J:/FPGA课程设计/FPGA电子时钟/watch/watch.srcs/sources_1/new/fsm.v,1733814126,verilog,,J:/FPGA课程设计/FPGA电子时钟/watch/watch.srcs/sources_1/new/top.v,,fsm,,,,,,,,
-J:/FPGA课程设计/FPGA电子时钟/watch/watch.srcs/sources_1/new/top.v,1733903084,verilog,,J:/FPGA课程设计/FPGA电子时钟/watch/watch.srcs/sim_1/new/tb_top.v,,top,,,,,,,,
+D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sim_1/new/tb_fsm.v,1734422639,verilog,,,,tb_fsm,,,,,,,,
+D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sim_1/new/tb_top.v,1734419712,verilog,,,,tb_top,,,,,,,,
+D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/counter.v,1734420584,verilog,,D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/display.v,,counter,,,,,,,,
+D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/display.v,1733903070,verilog,,D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/fsm.v,,display,,,,,,,,
+D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/fsm.v,1734052978,verilog,,D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sim_1/new/tb_fsm.v,,fsm,,,,,,,,
+D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/key.v,1734421231,verilog,,D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/time_adjust.v,,key,,,,,,,,
+D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/time_adjust.v,1734421243,verilog,,D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/top.v,,time_adjust,,,,,,,,
+D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/top.v,1734420839,verilog,,D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sim_1/new/tb_top.v,,top,,,,,,,,
