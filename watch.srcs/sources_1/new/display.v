@@ -1,6 +1,6 @@
 module display(
     input clk_1khz,          // 主时钟信号
-    input rst,        // 异步复位信号，低电平有效
+    input rst,               // 异步复位信号，低电平有效
     input [3:0] sec_low,
     input [2:0] sec_high,
     input [3:0] min_low,

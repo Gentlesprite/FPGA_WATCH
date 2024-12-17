@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="43282328000fs"></ZoomStartTime>
-      <ZoomEndTime time="43288013001fs"></ZoomEndTime>
-      <Cursor1Time time="43285828000fs"></Cursor1Time>
+      <ZoomStartTime time="18720fs"></ZoomStartTime>
+      <ZoomEndTime time="41581fs"></ZoomEndTime>
+      <Cursor1Time time="29100fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="175"></NameColumnWidth>
-      <ValueColumnWidth column_width="144"></ValueColumnWidth>
+      <ValueColumnWidth column_width="138"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="16" />
+   <WVObjectSize size="23" />
    <wvobject fp_name="/tb_top/rst" type="logic">
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
@@ -85,5 +85,36 @@
    <wvobject fp_name="/tb_top/uut/hour_high" type="array">
       <obj_property name="ElementShortName">hour_high[1:0]</obj_property>
       <obj_property name="ObjectShortName">hour_high[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut_key/key_start_stop" type="logic">
+      <obj_property name="ElementShortName">key_start_stop</obj_property>
+      <obj_property name="ObjectShortName">key_start_stop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut_key/key_select" type="logic">
+      <obj_property name="ElementShortName">key_select</obj_property>
+      <obj_property name="ObjectShortName">key_select</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut_key/key_inc" type="logic">
+      <obj_property name="ElementShortName">key_inc</obj_property>
+      <obj_property name="ObjectShortName">key_inc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut_key/manual_mode" type="logic">
+      <obj_property name="ElementShortName">manual_mode</obj_property>
+      <obj_property name="ObjectShortName">manual_mode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut_key/select_reg" type="array">
+      <obj_property name="ElementShortName">select_reg[2:0]</obj_property>
+      <obj_property name="ObjectShortName">select_reg[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut_key/start_stop_state" type="logic">
+      <obj_property name="ElementShortName">start_stop_state</obj_property>
+      <obj_property name="ObjectShortName">start_stop_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut_key/select_cnt" type="array">
+      <obj_property name="ElementShortName">select_cnt[2:0]</obj_property>
+      <obj_property name="ObjectShortName">select_cnt[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
    </wvobject>
 </wave_config>
