@@ -3,9 +3,9 @@
 Nov  6 2019
 21:57:16
 D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.sim/sim_1/behav/xsim/glbl.v,1734455211,verilog,,,,glbl,,,,,,,,
-D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sim_1/new/tb_top.v,1734457190,verilog,,,,tb_top,,,,,,,,
-D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/counter.v,1734456262,verilog,,D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/display.v,,counter,,,,,,,,
+D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sim_1/new/tb_top.v,1734503003,verilog,,,,tb_top,,,,,,,,
+D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/counter.v,1734501699,verilog,,D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/display.v,,counter,,,,,,,,
 D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/display.v,1734456271,verilog,,D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/fsm.v,,display,,,,,,,,
-D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/fsm.v,1734456645,verilog,,D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/key.v,,fsm,,,,,,,,
-D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/key.v,1734456283,verilog,,D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/top.v,,key,,,,,,,,
-D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/top.v,1734456501,verilog,,D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sim_1/new/tb_top.v,,top,,,,,,,,
+D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/fsm.v,1734498551,verilog,,D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/key.v,,fsm,,,,,,,,
+D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/key.v,1734498387,verilog,,D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/top.v,,key,,,,,,,,
+D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sources_1/new/top.v,1734499593,verilog,,D:/software/Xilinx/program/FPGA_EX15_2024304066/watch/watch.srcs/sim_1/new/tb_top.v,,top,,,,,,,,

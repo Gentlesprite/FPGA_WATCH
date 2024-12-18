@@ -2,7 +2,7 @@ module top(
     input clk,          // 外部时钟输入
     input rst,          // 复位信号
     input key_start_stop, // 启动/停止按键
-    input key_select,     // 选择按键
+    input [2:0]key_select,     // 选择按键
     input key_inc,        // 增加按键
     input key_dec,        // 减少按键
     output [7:0] seg8,  // 8位数码管段码输出
@@ -16,7 +16,7 @@ module top(
     wire [2:0] sec_high;
     wire [3:0] min_low;
     wire [2:0] min_high;
-    wire [1:0] hour_low;
+    wire [3:0] hour_low;
     wire [1:0] hour_high;
     wire manual_mode;
     wire [2:0] select_reg;

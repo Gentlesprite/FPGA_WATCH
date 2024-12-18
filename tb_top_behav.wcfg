@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="18720fs"></ZoomStartTime>
-      <ZoomEndTime time="41581fs"></ZoomEndTime>
-      <Cursor1Time time="29100fs"></Cursor1Time>
+      <ZoomStartTime time="6794096000fs"></ZoomStartTime>
+      <ZoomEndTime time="6805586001fs"></ZoomEndTime>
+      <Cursor1Time time="6803671000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="175"></NameColumnWidth>
-      <ValueColumnWidth column_width="138"></ValueColumnWidth>
+      <ValueColumnWidth column_width="132"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="23" />
+   <WVObjectSize size="24" />
    <wvobject fp_name="/tb_top/rst" type="logic">
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
@@ -65,10 +65,12 @@
    <wvobject fp_name="/tb_top/uut/sec_low" type="array">
       <obj_property name="ElementShortName">sec_low[3:0]</obj_property>
       <obj_property name="ObjectShortName">sec_low[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_top/uut/sec_high" type="array">
       <obj_property name="ElementShortName">sec_high[2:0]</obj_property>
       <obj_property name="ObjectShortName">sec_high[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_top/uut/min_low" type="array">
       <obj_property name="ElementShortName">min_low[3:0]</obj_property>
@@ -79,8 +81,9 @@
       <obj_property name="ObjectShortName">min_high[2:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_top/uut/hour_low" type="array">
-      <obj_property name="ElementShortName">hour_low[1:0]</obj_property>
-      <obj_property name="ObjectShortName">hour_low[1:0]</obj_property>
+      <obj_property name="ElementShortName">hour_low[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hour_low[3:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_top/uut/hour_high" type="array">
       <obj_property name="ElementShortName">hour_high[1:0]</obj_property>
@@ -98,6 +101,10 @@
       <obj_property name="ElementShortName">key_inc</obj_property>
       <obj_property name="ObjectShortName">key_inc</obj_property>
    </wvobject>
+   <wvobject fp_name="/tb_top/uut/uut_key/key_dec" type="logic">
+      <obj_property name="ElementShortName">key_dec</obj_property>
+      <obj_property name="ObjectShortName">key_dec</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb_top/uut/uut_key/manual_mode" type="logic">
       <obj_property name="ElementShortName">manual_mode</obj_property>
       <obj_property name="ObjectShortName">manual_mode</obj_property>
@@ -112,9 +119,8 @@
       <obj_property name="ObjectShortName">start_stop_state</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_top/uut/uut_key/select_cnt" type="array">
-      <obj_property name="ElementShortName">select_cnt[2:0]</obj_property>
-      <obj_property name="ObjectShortName">select_cnt[2:0]</obj_property>
+      <obj_property name="ElementShortName">select_cnt[1:0]</obj_property>
+      <obj_property name="ObjectShortName">select_cnt[1:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
-      <obj_property name="isExpanded"></obj_property>
    </wvobject>
 </wave_config>

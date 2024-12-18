@@ -6,7 +6,7 @@ module fsm(clk, rst, clk_1hz, clk_1khz);
     reg [27:0] counter1 = 0;
     reg [15:0] counter2 = 0;
     //parameter R1 = 50000000;
-    parameter R1 = 1;
+    parameter R1 = 500;
     always @(posedge clk)
         begin
             if (!rst)

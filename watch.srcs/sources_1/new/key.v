@@ -11,7 +11,7 @@ module key(
 );
 
     reg start_stop_state;
-    reg [2:0] select_cnt;
+    reg [1:0] select_cnt;
 
     // 同步按键输入
     reg key_start_stop_sync, key_select_sync, key_inc_sync, key_dec_sync;
